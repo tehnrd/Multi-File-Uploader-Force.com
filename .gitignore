@@ -1,0 +1,5 @@
+#If some of these need to be included let me know
+/Referenced Packages
+/.settings
+.project
+salesforce.schema
