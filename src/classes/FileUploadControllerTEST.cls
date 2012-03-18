@@ -37,10 +37,10 @@ private class FileUploadControllerTEST {
         //Start the test
         Test.startTest();
         //Send first part of the file to be uploaded
-        String attachmentId = FileUpload.attachBlob(acct.Id,'','fileName','text',part1base64);
+        String attachmentId = FileUploadController.attachBlob(acct.Id,'','fileName','text',part1base64);
         
         //Send the second piece of the file to be uploaded
-        FileUpload.attachBlob(acct.Id,attachmentId,'fileName','text',part2base64);
+        FileUploadController.attachBlob(acct.Id,attachmentId,'fileName','text',part2base64);
         Test.stopTest();
         
         //Assert one file has been attached to the test account
