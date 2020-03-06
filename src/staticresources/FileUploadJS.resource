@@ -126,8 +126,8 @@
 			var stopByte = parseInt(indexes[1]); //179999
 			
 			//Slice the part of the file we want to upload, currentFile variable is set in checkForUploads() method that is called before this method
-			if(currentFile.webkitSlice){
-				var blobChunk = currentFile.webkitSlice(startByte , stopByte + 1);
+			if(currentFile.slice){
+				var blobChunk = currentFile.slice(startByte , stopByte + 1);
 			}else if (currentFile.mozSlice) {
 				var blobChunk = currentFile.mozSlice(startByte , stopByte + 1);
 			}
